@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter text-[18px] text-dark-blue bg-white;
+  }
+
+  .image-container img {
+    border-radius: 5px;
+    box-shadow: 0 4rem 5rem -3rem #23237080;
+  }
+
+}
