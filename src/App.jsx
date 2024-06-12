@@ -1,3 +1,4 @@
+import { useState } from "react";
 import data from "../data.json";
 
 import prevIcon from "/images/icon-prev.svg";
@@ -5,7 +6,22 @@ import nextIcon from "/images/icon-next.svg";
 
 const App = () => {
   const testimonialsData = data.testimonials;
-  const currentSlide = testimonialsData[0];
+
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handleNext = () => {
+    setSlideIndex((prevIndex) => (prevIndex + 1) % testimonialsData.length);
+  };
+
+  const handlePrev = () => {
+      setSlideIndex(
+        (prevIndex) =>
+          (prevIndex - 1 + testimonialsData.length) % testimonialsData.length
+      );
+
+  };
+
+  const currentSlide = testimonialsData[slideIndex];
 
   return (
     <>
@@ -15,10 +31,10 @@ const App = () => {
             <img src={currentSlide.image} alt="user image" />
 
             <div className="arrow-slider">
-              <button type="button" name="prev">
+            <button type="button" name="prev" onClick={handlePrev}>
                 <img src={prevIcon} alt="previous slide arrow" />
               </button>
-              <button type="button" name="next">
+              <button type="button" name="next" onClick={handleNext}>
                 <img src={nextIcon} alt="next slide arrow" />
               </button>
             </div>
