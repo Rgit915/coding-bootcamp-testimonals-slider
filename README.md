@@ -29,9 +29,9 @@ Users should be able to:
 ### Screenshot
 
 
-![Testimonal Slider Desktop preview](./src/assets/screenshots/testimonal-slider-desktop-solution-preview.png)
+![Testimonal Slider Desktop preview](https://github.com/Rgit915/coding-bootcamp-testimonals-slider/blob/main/src/assets/screenshot/testimonal-slider-desktop-solution-preview.png)
 
-![Testimonal Slider mobile preview](./src/assets/screenshots/testimonal-slider-mobile-solution-preview.png)
+![Testimonal Slider mobile preview](https://github.com/Rgit915/coding-bootcamp-testimonals-slider/blob/main/src/assets/screenshot/testimonal-slider-mobile-solution-preview.png)
 
 
 
