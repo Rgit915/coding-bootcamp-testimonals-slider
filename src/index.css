@@ -11,5 +11,14 @@
     border-radius: 5px;
     box-shadow: 0 4rem 5rem -3rem #23237080;
   }
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
 
 }
